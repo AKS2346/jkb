@@ -1,0 +1,29 @@
+\documentclass[a5paper,13pt]{memoir}
+\usepackage{titlesec}
+\usepackage{graphicx}
+\graphicspath{ {./images/} }
+
+% Packages Pandoc needs to create pdf. 
+\providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{1pt}}
+
+% Set up the titles
+% Create the chapter format using titlesec
+\titleformat
+{\chapter}
+[display] %shape
+{\bfseries\LARGE} %format
+{\thechapter} % label
+{2cm} %sep
+{} % before code
+[] %after code
+
+% main document
+\begin{document}
+
+\title{Who Are We ?}
+\author{JK Luthra}
+\date{}
+\maketitle
+\clearpage
+\input{./chapters/who_are_we.tex}
+\end{document}

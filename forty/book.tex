@@ -1,0 +1,45 @@
+\documentclass[a5paper,13pt]{memoir}
+\usepackage{titlesec}
+\usepackage{graphicx}
+\graphicspath{ {./images/} }
+
+% Packages Pandoc needs to create pdf. 
+\providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{1pt}}
+
+% Set up the titles
+% Create the chapter format using titlesec
+\titleformat
+{\chapter}
+[display] %shape
+{\bfseries\LARGE} %format
+{\thechapter} % label
+{2cm} %sep
+{} % before code
+[] %after code
+
+% main document
+\begin{document}
+
+\title{Forty Kilograms\linebreak\& Memories of Panipat in the 1950s}
+\author{JK Luthra}
+\date{}
+\maketitle
+\clearpage
+\tableofcontents
+
+\input{./chapters/40.tex}
+\input{./chapters/festivals.tex}
+\input{./chapters/games_we_played.tex}
+\input{./chapters/grit_and_bravery.tex}
+\input{./chapters/foods_we_ate.tex}
+\input{./chapters/vendors.tex}
+\input{./chapters/keeping_cool.tex}
+\input{./chapters/more_festivals.tex}
+\input{./chapters/customs.tex}
+\input{./chapters/sights_and_sounds.tex}
+\input{./chapters/dreams_dont_die.tex}
+\input{./chapters/survival.tex}
+\input{./chapters/getting_from.tex}
+\input{./chapters/post_script.tex}
+
+\end{document}

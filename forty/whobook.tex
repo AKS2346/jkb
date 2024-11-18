@@ -1,0 +1,46 @@
+\documentclass[12pt,openany]{book}      % paper size is in preamble.sty
+\usepackage{graphicx}
+\graphicspath{ {./images/} } % set up where the images are relative to this file
+
+%\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+
+%%%%%%%%%% BOOK INFORMATION %%%%%%%%%%
+\newcommand{\authorname}{JK Luthra}
+\newcommand{\booktitle}{Who Are We}
+\newcommand{\subtitle}{\& Memories of Panipat in the 1950}
+\newcommand{\publisher}{Gindi Press, Ltd.}
+\newcommand{\editionyear}{2024}
+\newcommand{\isbn}{978-3-16-148410-0}   % replace this with your own ISBN
+\title{\booktitle}
+\author{\authorname}
+
+\usepackage{misc/options}
+
+\begin{document}
+\frontmatter
+\input{frontmatter/titlepage}
+\input{frontmatter/copyrightpage}
+\input{frontmatter/preface}
+\input{frontmatter/tocpage}
+
+\mainmatter
+\pagestyle{fancy}
+
+\input{./chapters/festivals.tex}
+\input{./chapters/games_we_played.tex}
+\input{./chapters/grit_and_bravery.tex}
+\input{./chapters/foods_we_ate.tex}
+\input{./chapters/vendors.tex}
+\input{./chapters/keeping_cool.tex}
+\input{./chapters/more_festivals.tex}
+\input{./chapters/customs.tex}
+\input{./chapters/sights_and_sounds.tex}
+\input{./chapters/dreams_dont_die.tex}
+\input{./chapters/survival.tex}
+\input{./chapters/getting_from.tex}
+\input{./chapters/post_script.tex}
+
+\end{document}
+
+
